@@ -1,0 +1,60 @@
+#global {
+    width: 100%;
+    height: 96vh;
+    margin: 0 auto;
+    } .welcome_title {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        width: 100%;
+        height: 30%;
+        } .logo-title {
+            height: 20%;
+            margin-left: 1.5%;
+    } .credentials {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 5%;
+        width: 100%;
+        height: 5.5%;
+        /* gap: 5vw; */
+        } .login-link {
+            background: linear-gradient(.25turn, rgb(255, 255, 255), 30%, rgb(136, 136, 136));
+            width: 50%;
+            height: 80%;
+            text-decoration: none;
+            color: black;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding-right: 5%;
+            font-size: 1.5em;
+        } .register-link {
+            background: linear-gradient(.25turn,  rgb(136, 136, 136), 70%, rgb(255, 255, 255));
+            width: 50%;
+            height: 80%;
+            text-decoration: none;
+            color: black;
+            padding-left: 5%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            font-size: 1.5em;
+            } .login_credentials {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            } .login_credentials > input {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            } .login_credentials > button {
+                margin-top: 2.5%;
+            } .register_credentials {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            } .register_credentials > button {
+                margin-top: 2.5%;
+            }

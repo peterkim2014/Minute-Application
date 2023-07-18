@@ -1,0 +1,240 @@
+#global, html {
+    width: 100%;
+    height: 95vh;
+    margin: 0 auto;
+    } .top_nav_bar {
+        width: 100%;
+        height: 11vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        } .logo-link {
+            width: 11%;
+            margin-left: 2.5%;
+        } .minute_header {
+            margin-left: 2.5%;
+            width: 98%;
+        } .account {
+            margin-right: 2.5%;
+    } .main {
+        height: 100vh;
+        width: 100%;
+        } .main > h2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 5%;
+            margin: 0;
+            margin-bottom: 2.5%;
+            font-size: large;
+        } .body {
+            height: 90vh;
+            width: 100%;
+            display: flex;
+            } .side-nav-bar {
+                width: 12%;
+                height: 50%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+                border-right: thin solid black;
+            } .side-nav-bar > a {
+                text-decoration: none;
+                color: black;
+            } .return-home {
+                margin: 0;
+                font-size: medium;
+            } .side-calender, .side-evaluation, .side-minute {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-bottom: 5%;
+                } .side-calender > h2 {
+                    font-size: medium;
+                } .side-evaluation > h2 {
+                    font-size: medium;
+                } .side-minute > h2 {
+                    font-size: medium;
+                } .side-links {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 1.5vh;
+                    margin-left: 20%;
+                    font-size: small;
+                    } .side-links > a {
+                        font-size: small;
+            } .content {
+                display: flex;
+                width: 95%;
+                height: 90%;
+                } .evaluation-list {
+                    width: 25%;
+                    height: 90%;
+                    margin-left: 2.5%;
+                    gap: 0.5vh;
+                    display: flex;
+                    flex-direction: column;
+                    } .evaluation-choice {
+                        width: 100%;
+                        height: 12%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: center;
+                        border-radius: 5px 0px 0px 5px;
+                        background-color: rgba(24, 24, 103, 0.772);
+                        } .evaluation-choice > h3 {
+                            margin-left: 7.5%;
+                            margin-top: 0;
+                            margin-bottom: 0;
+                            color: white;
+                            font-size: 0.95em;
+                        } .evaluation-choice > h4 {
+                            margin-left: 7.5%;
+                            margin-top: 0;
+                            margin-bottom: 0;
+                            color: white;
+                            font-size: 0.9em;
+                } .evaluation-description {
+                    background-color: rgba(128, 128, 128, 0.252);
+                    width: 88%;
+                    height: 100%;
+                    margin-right: 5%;
+                    font-size: 0.85em;
+                    } .evaluation-description > h3 {
+                        display: flex;
+                        height: 10%;
+                        width: 100%;
+                        justify-content: center;
+                        align-items: center;
+                        margin: 0;
+                        font-size: medium;
+                        } .interview {
+                            display: flex;
+                            height: 50%;
+                            width: 100%;
+                            } .interview-questions {
+                                height: 100%;
+                                width: 37.5%;
+                                } .interview-questions > h3 {
+                                    margin: 0;
+                                    font-size: 0.95em;
+                                    padding-top: 1.5%;
+                                    padding-left: 5%;
+                                    width: 100%;
+                                    background-color: rgb(176, 174, 174);
+                                } .questions {
+                                    width: 100%;
+                                    display: flex;
+                                    margin-top: 2.5%;
+                                    } .questions-content {
+                                        height: 80%;
+                                    } .questions-container {
+                                        display: flex;
+                                        width: 100%;
+                                        } .questions-list {
+                                            padding-left: 4%;
+                                            margin: 0;
+                                            margin-top: 3.5%;
+                                            font-size: 0.97em;
+                                            list-style-type: none;
+                                            } .questions-list > p {
+                                                margin: 0;
+                                                margin-top: 1.5%;
+                                                margin-left: 12%;
+                            } .portfolio-review {
+                                height: 90%;
+                                width: 35%;
+                                } .portfolio-review > h3 {
+                                    margin: 0;
+                                    font-size: 0.95em;
+                                    padding-top: 1.5%;
+                                    padding-left: 5%;
+                                    width: 100%;
+
+                                    background-color: rgb(176, 174, 174);
+                                    } .reviews {
+                                        width: 100%;
+                                        height: 100%;
+                                        margin-top: 10%;
+                                        } .review-container {
+                                            display: flex;
+                                            } .review-list {
+                                                padding-left: 5%;
+                                                margin: 0;
+                                                padding-top: 5%;
+                                                list-style-type: none;
+                                            } .review-list > p {
+                                                margin: 0;
+                                                margin-top: 1.5%;
+                                                margin-left: 3%;
+                            } .resume-review {
+                                height: 100%;
+                                width: 28.63%;
+                            } .resume-review > h3 {
+                                    margin: 0;
+                                    font-size: 0.95em;
+                                    padding-top: 2%;
+                                    padding-left: 10%;
+                                    width: 90%;
+                                    background-color: rgb(176, 174, 174);
+                                    } .resumes-list {
+                                        width: 100%;
+                                        height: 100%;
+                                        } .resumes {
+                                            padding-left: 10%;
+                                            display: flex;
+                                            width: 100%;
+                                            } .resume-attributes {
+                                                padding-left: 10%;
+                                                margin: 0;
+                                                margin-top: 15%;
+                                                list-style-type: disc;
+                                                } .resume-attributes > li {
+                                                    margin-bottom: 7.5%;
+                                                    font-size: 0.98em;
+                                                    } li::marker {
+                                                        font-size: 0.5em;
+                } .feedback {
+                    padding-top: 2.5%;
+                    height: 20%;
+                    width: 100%;
+                    } .feedback > h3 {
+                        padding-left: 1.5%;
+                        display: flex;
+                        height: 10%;
+                        width: 97.5%;
+                        justify-content: flex-start;
+                        align-items: center;
+                        margin: 0;
+                        font-size: medium;
+                    } .feedback-content {
+                        height: 70%;
+                        width: 100%;
+                        font-size: 0.95em;
+                        padding-left: 1.25%;
+                        } .feedback-content > p {
+                            padding-right: 5%;
+                } .notes {
+                    display: flex;
+                    flex-direction: column;
+                    height: 40%;
+                    width: 100%;
+                    } .notes > h3 {
+                        height: 15%;
+                        width: 100%;
+                        margin: 0;
+                        padding-left: 1.25%;
+                        } .input-notes {
+                            width: 92%;
+                            margin-left: 1.25%;
+                            height: 15%;
+                            border: 0;
+                            border-bottom: 2px solid gray;
+                            outline: 0;
+                            background-color: rgba(128, 128, 128, 0.12);
+                            display: grid;
+                            row-gap: 2.5vh;
+                        }

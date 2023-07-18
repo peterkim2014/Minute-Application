@@ -1,0 +1,68 @@
+#global, html {
+    width: 100%;
+    height: 165vh;
+    margin: 0 auto;
+    overflow-y: auto;
+    } .top_nav_bar {
+        width: 100%;
+        height: 11vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        } .logo-link {
+            width: 100%;
+        } .minute_header {
+            margin-left: 2.5%;
+            width: 12%;
+        } .account {
+            margin-right: 2.5%;
+    } .main {
+        height: 100vh;
+        width: 100%;
+        } .main > h2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 5%;
+            margin: 0;
+            margin-bottom: 2.5%;
+            font-size: large;
+        } .body {
+            height: 90vh;
+            width: 100%;
+            display: flex;
+            } .side-nav-bar {
+                width: 12%;
+                height: 50%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+                border-right: thin solid black;
+            } .side-nav-bar > a {
+                    text-decoration: none;
+                    color: black;
+                } .return-home {
+                    margin: 0;
+                    font-size: medium;
+            } .side-calender, .side-evaluation, .side-minute {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-bottom: 5%;
+                } .side-calender > h2 {
+                    font-size: medium;
+                } .side-evaluation > h2 {
+                    font-size: medium;
+                } .side-minute > h2 {
+                    font-size: medium;
+                } .side-links {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 1.5vh;
+                    margin-left: 20%;
+                    font-size: small;
+                    } .side-links > a {
+                        font-size: small;
+                    }

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/company_application.css') }}">
+</head>
+<body>
+    
+    <div id="global">
+
+        <div class="top_nav_bar">
+            <a class="logo-link" href="/homepage">
+                <img class="minute_header" src="../../static/media/minute_header.png" alt="minute header">
+            </a>
+            <div class="account">
+                <a>Account</a>
+                <a href="/logout">Logout</a>
+            </div>
+        </div>
+
+        <div class="main">
+            <h2>Track your Future</h2>
+            <div class="body">
+                <div class="side-nav-bar">
+                    <a href="/company_home"><h2 class="return-home">Home</h2></a>
+                    <div class="side-calender">
+                        <h2>Application</h2>
+                        <div class="side-links">
+                            <a href="/company_applications">View</a>
+                            <a href="/application_add">Add</a>
+                        </div>
+                    </div>
+                    <div class="side-evaluation">
+                        <h2>Evaluations</h2>
+                        <div class="side-links">
+                            <a>View</a>
+                            <a>Manage</a>
+                        </div>
+                    </div>
+                    <div class="side-minute">
+                        <h2>Minutes</h2>
+                        <a class="side-links">Queue</a>
+                    </div>
+                </div>
+    
+                <div class="content">
+
+                    <form action="/application/edit", method="POST">
+                        <input type="hidden" name="id" value={{ id }}>
+                        <label>
+                            Position
+                            <textarea name="position">{{ application.position }}</textarea>
+                        </label>
+                        <label>
+                            Position Overview
+                            
+                            <textarea name="position_overview">{{ application.position_overview }}</textarea>
+                        </label>
+                        <label>
+                            Position Role
+                            <textarea name="position_role">{{ application.position_role }}</textarea>
+                        </label>
+                        <label>
+                            Application Due
+                            <input type="date" name="due_day" value={{ application.due_day }}>
+                        </label>
+                        <label>
+                            <input type="time" name="due_time" value={{ application.due_time }}>
+                        </label>
+                        <button>Edit Application</button>
+                    </form>
+
+                    <form action="/qualifications/add", method="POST">
+                        <input type="hidden" name="application_id" value={{ application.id }}>
+                        <label>
+                            Position Qualifications
+                            <textarea name="qualification"></textarea>
+                        </label>
+                        <button>Submit qualification</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>

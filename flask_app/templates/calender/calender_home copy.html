@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/calender.css') }}">
+</head>
+<body>
+    
+    <div id="global">
+
+        <div class="top_nav_bar">
+            <a class="logo-link" href="/homepage">
+                <img class="minute_header" src="../../static/media/minute_header.png" alt="minute header">
+            </a>
+            <div class="account">
+                <a>Account</a>
+                <a href="/logout">Logout</a>
+            </div>
+        </div>
+
+        <div class="main">
+            <h2>Track your Future</h2>
+            <div class="body">
+                <div class="side-nav-bar">
+                    <a href="/homepage"><h2 class="return-home">Home</h2></a>
+                    <div class="side-calender">
+                        <h2>Calender</h2>
+                        <div class="side-links">
+                            <a href="/calender">View</a>
+                            <a>Manage</a>
+                        </div>
+                    </div>
+                    <div class="side-evaluation">
+                        <h2>Evaluations</h2>
+                        <div class="side-links">
+                            <a href="/evaluation">View</a>
+                            <a>Manage</a>
+                        </div>
+                    </div>
+                    <div class="side-minute">
+                        <h2>Minutes</h2>
+                        <a class="side-links" href="/minute">Queue</a>
+                    </div>
+                </div>
+    
+                <div class="content">
+                    <div class="filter">
+                        <form class="filter-list">
+                            <select>
+                                <option>2023</option>
+                                <option>2022</option>
+                                <option>2021</option>
+                                <option>2020</option>
+                            </select>
+                        </form>
+                        <a href="/calender/add">Add</a>
+                    </div>
+                    <div class="event-list">
+                        <div class="event">
+                            <div class="date">
+                                <h3>Jan</h3>
+                                <h4>4</h4>
+                            </div>
+                            <div class="description">
+
+                                <div class="company-name">
+                                    <h2>Company Name</h2>
+                                    <div class="description-name">
+                                        <div class="event-content">
+                                            <h3>PathMatch</h3>
+                                            <h4>Product Design Internship</h4>
+                                        </div>
+                                        <div class="calender-separator"></div>
+                                    </div>
+                                </div>
+                                <div class="company-brief">
+                                    <h2>Company Brief</h2>
+                                    <div class="description-brief">
+                                        <div class="event-description">
+                                            <p>PathMatch is a Career Navigation App for Gen Z. Companies leverage our platform to hire matched interns and grads. One of our clients builds software-as-a-service products to make building with computer vision easy.</p>
+                                        </div>
+                                        <div class="calender-separator-brief"></div>
+                                    </div>
+                                    <a class="read-more">Read More</a>
+                                </div>
+                                <div class="position-overview">
+                                    <h2>Position Overview</h2>
+                                    <div class="description-overview">
+                                        <div class="event-overview">
+                                            <p>Act as a research assistat to the UX Researcher: helping conduct interviews, journey mapping, and design workshops</p>
+                                        </div>
+                                        <div class="calender-separator-overview"></div>
+                                    </div>
+                                    <a class="read-more">Read More</a>
+                                </div>
+                                <div class="position-qualifications">
+                                    <h2>Position Qualifications</h2>
+                                    <div class="description-qualifications">
+                                        <div class="event-qualifications">
+                                            <p>Strong desire to learn about online retail, technology, fashion, homegoods, and business-to-business</p>
+                                        </div>
+                                    </div>
+                                    <a class="read-more">Read More</a>
+                                </div>
+
+                            </div>
+                        </div>
+                        {% for application in applications %}
+                        <div class="event-list">
+                            <div class="event">
+                                <div class="description">
+                                    <div class="company-name">
+                                        <h2>Company Name</h2>
+                                        <div class="description-name">
+                                            <div class="event-content">
+                                                <h3>{{ company.name }}</h3>
+                                                <h4>{{ application.position }}</h4>
+                                            </div>
+                                            <div class="calender-separator"></div>
+                                        </div>
+                                    </div>
+                                    <div class="company-brief">
+                                        <h2>Company Brief</h2>
+                                        <div class="description-brief">
+                                            <div class="event-description">
+                                                <p>{{ company.brief }}</p>
+                                                <div class="calender-separator-brief"></div>
+                                            </div>
+                                            <a class="read-more">Read More</a>
+                                        </div>
+                                    </div>
+                                    <div class="position-overview">
+                                        <h2>Position Overview</h2>
+                                        <div class="description-overview">
+                                            <div class="event-overview">
+                                                <p>{{ application.position_overview }}</p>
+                                                <div class="calender-separator-overview"></div>
+                                            </div>
+                                        </div>
+                                        <a class="read-more">Read More</a>
+                                    </div>
+                                    <div class="position-qualifications">
+                                        <h2>Position Qualifications</h2>
+                                        <div class="description-qualifications">
+                                            <div class="event-qualifications">
+                                                <p>{{ application.position_qualifications }}</p>
+                                            </div>
+                                        </div>
+                                        <a class="read-more">Read More</a>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>

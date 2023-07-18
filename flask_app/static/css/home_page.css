@@ -1,0 +1,408 @@
+#global, html {
+    width: 100%;
+    height: 98vh;
+    margin: 0 auto;
+    } .top_nav_bar {
+        width: 100%;
+        height: 11vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        } .logo-link {
+            width: 100%;
+        } .minute_header {
+            margin-left: 2.5%;
+            width: 12%;
+        } .account {
+            margin-right: 2.5%;
+    } .main {
+        height: 100vh;
+        width: 100%;
+        } .main > h2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 5%;
+            margin: 0;
+            margin-bottom: 2.5%;
+            font-size: large;
+        } .body {
+            height: 90vh;
+            width: 100%;
+            display: flex;
+            } .side-nav-bar {
+                width: 12%;
+                height: 50%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+                border-right: thin solid black;
+            } .side-nav-bar > a {
+                    text-decoration: none;
+                    color: black;
+                } .return-home {
+                    margin: 0;
+                    font-size: medium;
+            } .side-calender, .side-evaluation, .side-minute {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-bottom: 5%;
+                } .side-calender > h2 {
+                    font-size: medium;
+                } .side-evaluation > h2 {
+                    font-size: medium;
+                } .side-minute > h2 {
+                    font-size: medium;
+                } .side-links {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 1.5vh;
+                    margin-left: 20%;
+                    font-size: small;
+                    } .side-links > a {
+                        font-size: small;
+            } .content {
+                height: 140%;
+                width: 85%;
+                display: flex;
+                flex-direction: column;
+                align-items: space-evenly;
+                margin-left: 3%;
+                padding-right: 5%;
+                } .title-bar {
+                    width: 100%;
+                    height: 5%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: rgba(24, 24, 103, 0.772);
+                    color: white;
+                    font-size: medium;
+
+                } .content-body {
+                    height: 50%;
+                    width: 100%;
+                    border-radius: 12px;
+                    margin-bottom: 1.5%;  
+                } .profile { 
+                    width: 100%;
+                    height: 100%; 
+                    display: flex;
+                    gap: 0.75vw;
+                    margin: 0;
+                    } .profile-overview {
+                        height: 100%;
+                        width: 75%;
+                        display: flex;
+                        justify-content: space-evenly;
+                        background-color: rgba(128, 128, 128, 0.252);
+                        gap: 1.25vw;
+                        } .pitch {
+                            margin-top: 0.5%;
+                            width: 30%;
+                            height: 90%;
+                            padding-left: 1.5%;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-end;
+                            justify-content: space-evenly;
+                            } .pitch > p {
+                                margin: 0; 
+                                margin-top: 8%;
+                                font-size: 0.9em;
+                            } .pitch > h4 {
+                                margin: 0;
+                                width: 100%;
+                                display: flex;
+                                justify-content: flex-end;
+                                /* background-color: rgb(184, 184, 184); */
+                            } .pitch > a {
+                                font-size: 0.8em;
+                                display: flex;
+                                align-items: flex-end;
+                                justify-content: flex-end;
+                        } .resume {
+                            margin-top: 2.5%;
+                            width: 60%;
+                            height: 37vh;
+                            } .resume > p {
+                                margin: 0; 
+                            } .resume > h4 {
+                                margin: 0;
+                                width: fit-content;
+                        } .overview-separator {
+                            height: 100%;
+                            width: 0.25%;
+                            background-color: rgb(182, 182, 182);
+                    }.profile-body {
+                        width: 45%;
+                        height: 100%; 
+                        display: flex;
+                        flex-direction: column; 
+                        background-color: rgba(128, 128, 128, 0.252);  
+                        } .profile-abilities {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: flex-start;
+                            align-items: center;
+                            width: 100%; 
+                            height: 70%;
+                            } .abilities-list {
+                                width: 85%;
+                                height: 20vh;
+                                margin-top: 1.25%;
+                                gap: 0.5vh;
+                                display: grid;
+                                grid-template-columns: 1fr 1fr 1fr;
+                                } .ability-col {
+                                    padding-left: 2%;
+                                    margin: 0;
+                                    margin-top: 1.25%;
+                                    list-style-type: none;
+                                } .ability {
+                                    font-size: 0.72em;
+                                } .profile-abilities > h4 {
+                                    margin-top: 2%;
+                                    margin-bottom: 1%;
+                                    padding-left: 2.5%;
+                                    width: 90%;
+                                    height: 10%;
+                                    display: flex;
+                                    justify-content: flex-start;
+                                    align-items: center;
+                                    font-size: 0.8em;
+                                    background-color: rgb(191, 187, 187);
+                        } .profile-header {
+                            width: 100%;
+                            height: 12vh;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            margin-top: 2.5%;
+                            } .profile-basic {
+                                margin-left: 4%;
+                                width: 50%;
+                                height: 100%;
+                                display: flex;
+                                justify-content: space-around;
+                                align-items: center;
+                                gap: 0.25vw;
+                                } .profile-image {
+                                    width: 45%;
+                                    height: 100%;
+                                    background-color: rgb(164, 161, 161);
+                                    border-radius: 10%;
+                                } .profile-name {
+                                    height: 90%;
+                                    width: 55%;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: flex-start;
+                                    align-items: flex-start;
+                                    } .profile-name > h3 {
+                                        margin: 0;
+                                        font-size: medium;
+                                    } .profile-name > h4 {
+                                        margin: 0;
+                                        font-size: x-small;
+                                } .interview-stats {
+                                    height: 70%;
+                                    width: 40%;
+                                    margin-right: 4%;
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: flex-start;
+                                    } .stat {
+                                        height: 80%;
+                                        width: 49%;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                        } .stat > p {
+                                            margin: 0;
+                                            width: 100%;
+                                            height: 35%;
+                                        } .stat-header {
+                                            background-color: rgb(191, 187, 187);
+                                            height: 25%;
+                                            font-size: 1em;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            font-size: small;
+                                        } .stat-num {
+                                            font-size: larger;
+                                            height: 90%;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: flex-start;
+                } .content-footer {
+                    height: 100%;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    } .minute-list {
+                        width: 24.5%;
+                        height: 100%;
+                        margin-right: 0;
+                        background-color: rgba(128, 128, 128, 0.252);
+                        border-radius: 2%;
+                        overflow-x: scroll;
+                        scroll-behavior: smooth;
+                        } .application-info {
+                            margin-top: 1.5%;
+                            height: 90%;
+                            display: flex;
+                            flex-direction: column;
+                            } .app-overview > h4 {
+                                margin-top: 3%;
+                                margin-bottom: 3%;
+                                margin-left: 2%;
+                                font-size: 0.87em;
+                            } .app-overview > p {
+                                margin-top: 1%;
+                                margin-bottom: 1%;
+                                margin-left: 2%;
+                                font-size: 0.9em;
+                            } .app-qualifications > h4 {
+                                margin-top: 3%;
+                                margin-bottom: 1%;
+                                margin-left: 2%;
+                                font-size: 0.87em;
+                            } .app-qualifications > ul {
+                                margin-top: 1%;
+                                margin-bottom: 1%;
+                                margin-left: 2%;
+                                font-size: 0.9em;
+                                list-style-type: none;
+                                gap: 1.25vh;
+                            } .app-position > h4 {
+                                margin-top: 1%;
+                                margin-bottom: 1%;
+                                margin-left: 2%;
+                                font-size: 0.87em;
+                            } .app-position > ul {
+                                margin-top: 1%;
+                                margin-bottom: 1%;
+                                margin-left: 2%;
+                                padding-right: 7%;
+                                font-size: 0.9em;
+                                list-style-type: none;
+                            } .app-compensation > h4 {
+                                margin-top: 1%;
+                                margin-bottom: 1%;
+                                margin-left: 2%;
+                                font-size: 0.9em;
+                            } .app-compensation > p {
+                                margin-top: 1%;
+                                margin-bottom: 1%;
+                                margin-left: 2%;
+                                font-size: 0.9em;
+                            } .minute-questions > h4 {
+                                margin-top: 3%;
+                                margin-bottom: 3%;
+                                margin-left: 2.75%;
+                                font-size: 0.9em;
+                            } .minute-questions > ul {
+                                font-size: 0.89em;
+                                list-style-type: none;
+                                padding-right: 15%;
+                            } .minute-meeting-info {
+                                display: flex;
+                                justify-content: center;
+                                width: 100%;
+                                height: 14%;
+                                font-size: 0.9em;
+                            } .minute-attendees-info {
+                                width: 90%;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                justify-content: space-between;
+                                height: 5em;
+                                margin-top: 0.5%;
+                                } .minute-date-column {
+                                    width: 40%;
+                                    height: 95%;
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    justify-content: space-around;
+
+                                    } .minute-date {
+                                        display: flex;
+                                        flex-direction: column;
+                                        align-items: center;
+                                        
+                                        } .minute-date > p {
+                                            margin-top: 3%;
+                                            margin-bottom: 3%;
+                                            font-size: 1em;
+                                } .attendees-list {
+                                    width: 100%;
+                                    height: 50%;
+                                    display: flex;
+                                    justify-content: space-around;
+                                    align-items: center;
+                                } .minute-date-column > h4 {
+                                    margin-top: 3%;
+                                    margin-bottom: 3%;
+                                    font-size: 0.92em;
+                                } .minute-attendees-info > h4 {
+                                    margin-top: 2%;
+                                    margin-bottom: 0;
+                                    font-size: 0.92em;
+                                    } .minute-attendee {
+                                        width: 25%;
+                                        height: 80%;
+                                        display: flex;
+                                        flex-direction: column;
+                                        align-items: flex-start;
+                                        justify-content: space-around;
+                                        } .minute-attendee > h5 {
+                                            margin-top: 10%;
+                                            margin-bottom: 10%;
+                                        } .attendee-position {
+                                            margin-top: 1%;
+                                            margin-bottom: 1%;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            font-size: small;
+                        } .minute-header {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: medium;
+                            margin: 0;
+                            height: 8vh;
+                            background-color: rgba(24, 24, 103, 0.772);
+                            border-radius: 5px 5px 0px 0px;
+                            color: white;
+                            } .minute-header > h4 {
+                                margin: 0;
+                            } .minute-header > h5 {
+                                margin: 0;
+                                font-size: small;
+                        } .minute-progress {
+                            display: flex;
+                            justify-content: space-around;
+                            align-items: center;
+                            } .minute-progress > label {
+                                font-size: 0.7em;
+                        } .minute-meter {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            width: 100%;
+                            height: 1.2%;
+                            } .is_valid {
+                                width: 23%;
+                                height: 100%;
+                                background-color: rgba(24, 24, 103, 0.272);
+                            }

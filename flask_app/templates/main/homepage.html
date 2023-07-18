@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/home_page.css') }}">
+</head>
+<body>
+    
+    <div id="global">
+
+        <div class="top_nav_bar">
+            <a class="logo-link" href="/homepage">
+                <img class="minute_header" src="../../static/media/minute_header.png" alt="minute header">
+            </a>
+            
+            <div class="account">
+                <a href="/account">Account</a>
+                <a href="/logout">Logout</a>
+            </div>
+        </div>
+
+        <div class="main">
+            <h2>Track your Future</h2>
+            <div class="body">
+                <div class="side-nav-bar">
+                    <a href="/homepage"><h2 class="return-home">Home</h2></a>
+                    <div class="side-calender">
+                        <h2>Calender</h2>
+                        <div class="side-links">
+                            <a href="/calender">View</a>
+                        </div>
+                    </div>
+                    <div class="side-evaluation">
+                        <h2>Application</h2>
+                        <div class="side-links">
+                            <a href="/applications">View</a>
+                            <a href="/my_applications">My List</a>
+                        </div>
+                    </div>
+                    <div class="side-evaluation">
+                        <h2>Evaluations</h2>
+                        <div class="side-links">
+                            <a href="/evaluation">View</a>
+                        </div>
+                    </div>
+                    <div class="side-minute">
+                        <h2>Minutes</h2>
+                        <a class="side-links" href="/minute">Queue</a>
+                    </div>
+                </div>
+    
+                <div class="content">
+                    <div class="title-bar">User Overview</div>
+                    <div class="content-body">
+                        <div class="profile">
+                            <div class="profile-body">
+
+                                <div class="profile-header">
+                                    <div class="profile-basic">
+                                        <div class="profile-image"></div>
+                                        <div class="profile-name">
+                                            
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="interview-stats">
+                                        <div class="stat">
+                                            <p class="stat-header">Applied</p>
+                                            <p class="stat-num">14</p>
+                                        </div>
+                                        <div class="stat">
+                                            <p class="stat-header">In Queue</p>
+                                            <p class="stat-num">6</p>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="profile-abilities">
+                                    <h4>Abilities</h4>
+                                    <div class="abilities-list">
+                                        {% for ability in resume_abilities %}
+                                        <ul class="ability-col">
+                                            <li class="ability">{{ ability.ability_list.ability }}</li>
+                                        </ul>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="profile-overview">
+                                <div class="pitch">
+                                    <h4>Elevator Pitch</h4>
+                                    
+                                    <a>Read More</a>
+                                </div>
+                                <div class="overview-separator"></div>
+                                <div class="resume">
+                                    <h4>Brief Resume</h4>
+                                </div>
+                            </div>
+
+                            
+                        </div>
+
+                    </div>
+                    <div class="content-footer">
+                        {% for application in applications %}
+                        <div class="minute-list">
+                            <div class="minute-header">
+                                <h4>{{ company.name }}</h4>
+                                <h5>User Experience Designer</h5>
+                            </div>
+                            <div class="minute-meter">
+                                <div class="is_valid"></div>
+                                <div class="is_valid"></div>
+                                <div class="is_valid"></div>
+                                <div class="is_valid"></div>
+                            </div>
+                            <div class="minute-progress">
+                                <label for="applied">Applied
+                                    <input type="hidden" name="applied" value="1">
+                                    <!-- Use id for identification -->
+                                </label>
+                                <label for="in_process">In process
+                                    <input type="hidden"  name="in_process" value="2">
+                                    <!-- Use id for identification -->
+                                </label>
+                                <label for="interview">Interview
+                                    <input type="hidden" name="interview" value="3">
+                                    <!-- Use id for identification -->
+                                </label>
+                                <label for="result">Result
+                                    <input type="hidden" name="result" value="4">
+                                    <!-- Use id for identification -->
+                                </label>
+                            </div>
+                            <div class="application-info">
+                                <div class="app-overview">
+                                    <h4>Position Overview</h4>
+                                    <p>{{ application.overview }}</p>
+                                </div>
+
+                                <div class="app-qualifications">
+                                    <h4>Qualifications</h4>
+                                    <ul>
+                                        <li>Adobe Illustrator</li>
+                                        <li>Adobe Photoshop</li>
+                                        <li>Wireframing</li>
+                                        <li>User Interface Design</li>
+                                    </ul>
+                                    <ul>
+                                        <li>UX/UI Design</li>
+                                        <li>User Experience (UX)</li>
+                                        <li>Communication</li>
+                                        <li>Graphic Design</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="app-position">
+                                    <h4>Position Role</h4>
+                                    <ul>
+                                        <li>Connects users' knowledge and experience with interactive products. Demonstrates knowledge of one user for primary product.</li>
+                                        <li>Applies writing standards and process in everyday work and works with other writers to ensure compliance. Learns and understands accessibility standards for writing.</li>
+                                        <li>Posesses strong verbal and written communication skills, whether in one-on-one or group situations.</li>
+                                    </ul>
+                                </div>
+                                <div class="app-compensation">
+                                    <h4>Compensation</h4>
+                                    <p>A reasonable estimate of the compensation range for this position is $20.00/hr (undergraduate level) - $25.00/hr (masters/graduate level).</p>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                        <div class="minute-list">
+                            <div class="minute-header">
+                                <h4>Razorfish Firm Inc</h4>
+                                <h5>User Experience Designer</h5>
+                            </div>
+                            <div class="minute-meter">
+                                <p class="is_valid"></p>
+                                <p class="is_valid"></p>
+                                <p class="is_valid"></p>
+                                <p class="is_valid"></p>
+                            </div>
+                            <div class="minute-progress">
+
+                                <label for="applied">Applied
+                                    <input type="hidden" name="applied" value="1">
+                                    <!-- Use id for identification -->
+                                </label>
+                                <label for="in_process">In process
+                                    <input type="hidden"  name="in_process" value="2">
+                                    <!-- Use id for identification -->
+                                </label>
+                                <label for="interview">Interview
+                                    <input type="hidden" name="interview" value="3">
+                                    <!-- Use id for identification -->
+                                </label>
+                                <label for="result">Result
+                                    <input type="hidden" name="result" value="4">
+                                    <!-- Use id for identification -->
+                                </label>
+                            </div>
+                            <div class="application-info">
+                                <div class="app-overview">
+                                    <h4>Position Overview</h4>
+                                    <p>Produce wireframes, mockups, and prototypes for new features and products</p>
+                                </div>
+                                <div class="app-qualifications">
+                                    <h4>Qualifications</h4>
+                                    <ul>
+                                        <li>Adobe Illustrator</li>
+                                        <li>Adobe Photoshop</li>
+                                        <li>Wireframing</li>
+                                        <li>User Interface Design</li>
+                                    </ul>
+                                    <ul>
+                                        <li>UX/UI Design</li>
+                                        <li>User Experience (UX)</li>
+                                        <li>Communication</li>
+                                        <li>Graphic Design</li>
+                                    </ul>
+                                </div>
+                                <div class="app-position">
+                                    <h4>Position Role</h4>
+                                    <ul>
+                                        <li>Connects users' knowledge and experience with interactive products. Demonstrates knowledge of one user for primary product.</li>
+                                        <li>Applies writing standards and process in everyday work and works with other writers to ensure compliance. Learns and understands accessibility standards for writing.</li>
+                                        <li>Posesses strong verbal and written communication skills, whether in one-on-one or group situations.</li>
+                                    </ul>
+                                </div>
+                                <div class="app-compensation">
+                                    <h4>Compensation</h4>
+                                    <p>A reasonable estimate of the compensation range for this position is $20.00/hr (undergraduate level) - $25.00/hr (masters/graduate level).</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="minute-list">
+                            <div class="minute-header">
+                                <h4>Razorfish Firm Inc</h4>
+                                <h5>User Experience Designer</h5>
+                            </div>
+                            <div class="minute-meter">
+                                <p class="is_valid"></p>
+                                <p class="is_valid"></p>
+                                <p class="is_valid"></p>
+                                <p class="is_valid"></p>
+                            </div>
+                            <div class="minute-progress">
+
+                                <label for="applied">Applied
+                                    <input type="hidden" name="applied" value="1">
+                                    <!-- Use id for identification -->
+                                </label>
+                                <label for="in_process">In process
+                                    <input type="hidden"  name="in_process" value="2">
+                                    <!-- Use id for identification -->
+                                </label>
+                                <label for="interview">Interview
+                                    <input type="hidden" name="interview" value="3">
+                                    <!-- Use id for identification -->
+                                </label>
+                                <label for="result">Result
+                                    <input type="hidden" name="result" value="4">
+                                    <!-- Use id for identification -->
+                                </label>
+                            </div>
+                            <div class="application-info">
+                                <div class="minute-questions">
+                                    <h4>FAQs</h4>
+                                    <ul>
+                                        <li>What made you choose this company?</li>
+                                        <li>Explain why you would be a good fit for this company.</li>
+                                        <li>Explain why you would be a good fir for this company.</li>
+                                    </ul>
+                                </div>
+                                <div class="minute-meeting-info">
+                                    <div class="minute-date-column">
+                                        <h4>Meeting Time</h4>
+                                        <div class="minute-date">
+                                            <p>January 31</p>
+                                            <p>2023</p>
+                                        </div>
+                                    </div>
+                                    <div class="minute-attendees-info">
+                                        <h4>Attendees</h4>
+                                        <div class="attendees-list">
+                                            <div class="minute-attendee">
+                                                <h5>John D.</h5>
+                                                <p class="attendee-position">Recuiter</p>
+                                            </div>
+                                            <div class="minute-attendee">
+                                                <h5>Sara T.</h5>
+                                                <p class="attendee-position">Senior UX</p>
+                                            </div>
+                                            <div class="minute-attendee">
+                                                <h5>Ben H.</h5>
+                                                <p class="attendee-position">Software Engineer</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

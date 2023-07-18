@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/calender_add.css') }}">
+</head>
+<body>
+    
+    <div id="global">
+
+        <div class="top_nav_bar">
+            <a class="logo-link" href="/homepage">
+                <img class="minute_header" src="../../static/media/minute_header.png" alt="minute header">
+            </a>
+            <div class="account">
+                <a>Account</a>
+                <a href="/logout">Logout</a>
+            </div>
+        </div>
+
+        <div class="main">
+            <h2>Track your Future</h2>
+            <div class="body">
+                <div class="side-nav-bar">
+                    <a href="/homepage"><h2 class="return-home">Home</h2></a>
+                    <div class="side-calender">
+                        <h2>Calender</h2>
+                        <div class="side-links">
+                            <a href="/calender">View</a>
+                            <a>Manage</a>
+                        </div>
+                    </div>
+                    <div class="side-calender">
+                        <h2>Application</h2>
+                        <div class="side-links">
+                            <a href="/applications">View</a>
+                            <a href="/my_applications">My List</a>
+                        </div>
+                    </div>
+                    <div class="side-evaluation">
+                        <h2>Evaluations</h2>
+                        <div class="side-links">
+                            <a href="/evaluation">View</a>
+                            <a>Manage</a>
+                        </div>
+                    </div>
+                    <div class="side-minute">
+                        <h2>Minutes</h2>
+                        <a class="side-links">Queue</a>
+                    </div>
+                </div>
+    
+                <div class="content">
+                    <div class="filter">
+                        <a href="/calender">Back</a>
+                        <h3>Create Event for January 30</h3>
+                        <a>Edit</a>
+                    </div>
+                    <div class="event-create">
+                            <div class="date">
+                                <h3>Jan</h3>
+                                <h4>30</h4>
+                            </div>
+                            <div class="input-display">
+                                <div class="event-text">
+                                    <form method="POST" action="/interview_add">
+                                        <label>
+                                            Schedule an interview
+                                            <input type="date" name="interview_day">
+                                        </label>
+                                        <label>
+                                            <input type="time" name="interview_time">
+                                        </label>
+                                        <input type="hidden" name="user_id" value={{ user.id }}>
+                                        <input type="hidden" name="application_id" value={{ application_id }}>
+                                        <input type="hidden" name="resume_id" value={{ resume.id }}>
+                                        <button>Submit</button>
+                                    </form>
+                                        <div class="input-buttons">
+                                            <a class="cancel-input">Cancel</a>
+                                            <a class="create-input">Create Event</a>
+                                        </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>

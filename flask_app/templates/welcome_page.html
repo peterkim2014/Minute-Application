@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/welcome_page.css') }}">
+</head>
+<body>
+    
+    <div id="global">
+        <h1 class="welcome_title">Welcome to my Flask Application <img class="logo-title" src="../static/media/minute_logo.png" alt="minute-logo"></h1>
+    
+        <div class="credentials">
+            <a class="login-link" href="/login_page">Login</a>
+            <a class="register-link" href="/register_page">Register</a>
+            <a class="login-link" href="/company_login_page">Business Login</a>
+            <a class="register-link" href="/company_register">Register Business</a>
+        </div>
+        
+        {% block login_page %}
+        {% endblock %}
+        {% block register_page %}
+        {% endblock %}
+
+    </div>
+
+</body>
+</html>

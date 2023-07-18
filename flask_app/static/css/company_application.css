@@ -1,0 +1,269 @@
+#global, html {
+    width: 100%;
+    height: 95vh;
+    margin: 0 auto;
+    overflow-y: auto;
+    } .top_nav_bar {
+        width: 100%;
+        height: 11vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        } .logo-link {
+            width: 100%;
+        } .minute_header {
+            margin-left: 2.5%;
+            width: 12%;
+        } .account {
+            margin-right: 2.5%;
+    } .main {
+        height: 100vh;
+        width: 100%;
+        } .main > h2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 5%;
+            margin: 0;
+            margin-bottom: 2.5%;
+            font-size: large;
+        } .body {
+            height: 90vh;
+            width: 100%;
+            display: flex;
+            } .side-nav-bar {
+                width: 12%;
+                height: 50%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+                border-right: thin solid black;
+            } .side-nav-bar > a {
+                    text-decoration: none;
+                    color: black;
+                } .return-home {
+                    margin: 0;
+                    font-size: medium;
+            } .side-calender, .side-evaluation, .side-minute {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-bottom: 5%;
+                } .side-calender > h2 {
+                    font-size: medium;
+                } .side-evaluation > h2 {
+                    font-size: medium;
+                } .side-minute > h2 {
+                    font-size: medium;
+                } .side-links {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 1.5vh;
+                    margin-left: 20%;
+                    font-size: small;
+                    } .side-links > a {
+                        font-size: small;
+        } .content {
+            height: 100%;
+            width: 95%;
+            display: flex;
+            flex-direction: column;
+            align-items: space-evenly;
+            margin-left: 3%;
+            padding-right: 5%;
+            } .event-list {
+                height: 100%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                } .event {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    } .date {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        width: 8%;
+                        height: 95%;
+                        background-color: rgba(24, 24, 103, 0.772);
+                        border-radius: 5px 0px 0px 5px;
+                        gap: 1.25vh;
+                    } .date > h3 {
+                        font-size: 1.6em;
+                        margin-bottom: 0;
+                        color: white;
+                        margin-top: 7.5%;
+                    } .date > h4 {
+                        font-size: 2em;
+                        margin-top: 1.25%;
+                        margin-bottom: 7.5%;
+                        color: white;
+                    } .description {
+                        background-color: rgba(128, 128, 128, 0.252);
+                        width: 100%;
+                        height: 25%;
+                        border-radius: 0px 5px 5px 0px;
+                        display: flex;
+                        } .calender-separator {
+                            width: 1%;
+                            height: 65%;
+                            background-color: grey;
+                            margin-top: 12%;
+                        } .company-name {
+                            width: 55%;
+                            height: 95%;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            justify-content: space-between;
+                        } .company-name > h2 {
+                                padding-left: 7.5%;
+                                font-size: 0.87em;
+                                padding-top: 1.1%;
+                                margin: 0;
+                                width: 95%;
+                                background-color: rgb(180, 177, 177);
+                            } .description-name {
+                                display: flex;
+                                height: 90%;
+                                width: 90%;
+                                padding-left: 7.5%;
+                        } .company-brief {
+                            width: 80%;
+                            height: 95%;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            justify-content: space-between;
+                            } .description-brief {
+                                display: flex;
+                                flex-direction: column;
+                                height: 80%;  
+                                width: 100%;  
+                                padding-left: 2.5%; 
+                                gap: 1.25vw;
+                            } .company-brief > h2 {
+                                height: 8.5%;
+                                font-size: 0.85em;
+                                padding-top: 0.75%;
+                                padding-left: 2.5%;
+                                padding-bottom: 1%;
+                                margin: 0;
+                                width: 100%;
+                                background-color: rgb(180, 177, 177);
+                                } .description-brief > p {
+                                    margin: 0;
+                                    font-size: 0.88em;
+                                    padding-right: 1.5%; 
+                                } .calender-separator-brief {
+                                    width: 0.5%;
+                                    height: 90%;
+                                    background-color: grey;
+                        } .position-overview {
+                            width: 70%;
+                            height: 95%;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            justify-content: space-between;
+                        } .position-overview > h2 {
+                                padding-left: 5%;
+                                font-size: 0.87em;
+                                padding-top: 1%;
+                                margin: 0;
+                                width: 105%;
+                                background-color: rgb(180, 177, 177);
+                            } .description-overview {
+                                height: 90%;
+                                width: 100%;
+                                display: flex;
+                                padding-left: 7.5%;
+                                } .description-overview > a {
+                                    margin: 0;
+                                    font-size: 0.88em;
+                                } .calender-separator-overview {
+                                    width: 0.75%;
+                                    height: 70%;
+                                    background-color: grey;
+
+                        } .position-qualifications {
+                            padding-left: 1.75%;
+                            width: 75%;
+                            height: 95%;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            justify-content: space-between;
+                            } .position-qualifications > h2 {
+                                font-size: 0.87em;
+                                padding-top: 1%;
+                                margin: 0;
+                                width: 100%;
+                                /* padding-left: 5%; */
+                                background-color: rgb(180, 177, 177);
+                            } .description-qualifications {
+                                display: flex;
+                                height: 100%;
+                                padding-right: 5%;
+                            } .event-qualifications {
+                                font-size: 0.85em;
+                                padding-left: 5%;
+                            } .event-description {
+                                height: 100%;
+                                width: 100%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-around;
+                                } .event-description > p {
+                                    margin: 0;
+                                    font-size: 0.83em;
+                                } .event-description > a {
+                                    margin: 0;
+                                    width: 90%;
+                                    font-size: 0.75em;
+                                    display: flex;
+                                    justify-content: flex-end;
+                            } .event-overview {
+                                height: 100%;
+                                width: 100%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-around;
+                                } .event-overview > p {
+                                    margin: 0;
+                                    font-size: 0.83em;
+                                    padding-bottom: 15%;
+                                } .event-overview > a {
+                                    margin: 0;
+                                    width: 80%;
+                                    font-size: 0.75em;
+                                    display: flex;
+                                    justify-content: flex-end;
+                            } .event-content {
+                                height: 100%;
+                                width: 100%;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: flex-start;
+                                justify-content: center;
+                                gap: 2.5vh;
+                                } .event-content > h3 {
+                                    margin: 0;
+                                    font-size: 1.1em;
+                                } .event-content > h4 {
+                                    margin: 0;
+                                    font-size: 0.83em;
+                                } .event-content > p {
+                                    margin: 0;
+                                    font-size: 0.83em;
+                                } .read-more {
+                                    display: flex;
+                                    justify-content: flex-end;
+                                    width: 100%;
+                                    height: 10%;
+                                    font-size: 0.8em;
+                                }

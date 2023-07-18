@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/evaluation.css') }}">
+</head>
+<body>
+    
+    <div id="global">
+
+        <div class="top_nav_bar">
+            <a class="logo-link" href="/homepage">
+                <img class="minute_header" src="../../static/media/minute_header.png" alt="minute header">
+            </a>
+            <div class="account">
+                <a>Account</a>
+                <a href="/logout">Logout</a>
+            </div>
+        </div>
+
+        <div class="main">
+            <h2>Track your Future</h2>
+            <div class="body">
+                <div class="side-nav-bar">
+                    <a href="/homepage"><h2 class="return-home">Home</h2></a>
+                    <div class="side-calender">
+                        <h2>Calender</h2>
+                        <div class="side-links">
+                            <a href="/calender">View</a>
+                            <a>Manage</a>
+                        </div>
+                    </div>
+                    <div class="side-evaluation">
+                        <h2>Application</h2>
+                        <div class="side-links">
+                            <a href="/applications">View</a>
+                            <a>Manage</a>
+                        </div>
+                    </div>
+                    <div class="side-evaluation">
+                        <h2>Evaluations</h2>
+                        <div class="side-links">
+                            <a href="/evaluation">View</a>
+                            <a>Manage</a>
+                        </div>
+                    </div>
+                    <div class="side-minute">
+                        <h2>Minutes</h2>
+                        <a class="side-links" href="/minute">Queue</a>
+                    </div>
+                </div>
+    
+                <div class="content">
+                    <div class="evaluation-dropdown"></div>
+                    <div class="evaluation-list">
+                        <div class="evaluation-choice">
+                            <h3>Razorfish Firm Inc</h3>
+                            <h4><i>User Experience Designer</i></h4>
+                        </div>
+                        <div class="evaluation-choice">
+                            <h3>Deloitte</h3>
+                            <h4><i>Accountant</i></h4>
+                        </div>
+                        <div class="evaluation-choice">
+                            <h3>Apex Fintech</h3>
+                            <h4><i>Software Engineer</i></h4>
+                        </div>
+                    </div>
+                    <div class="evaluation-description">
+                        <div class="interview">
+
+                            <div class="interview-questions">
+                                <h3>Interview Questions</h3>
+                                <div class="questions">
+                                    <div class="questions-content">
+                                        <div class="questions-container">
+                                            <ul class="questions-list">
+                                                <li>What made you choose this company?</li>
+                                                <p>I believe I'm a good candidate because of ...</p>
+                                            </ul>
+                                        </div>
+                                        <div class="questions-container">
+                                            <ul class="questions-list">
+                                                <li>Explain why you would be a good fit for this company</li>
+                                                <p>I believe I'm a good candidate because of ...</p>
+                                            </ul>
+                                        </div>
+                                        <div class="questions-container">
+                                            <ul class="questions-list">
+                                                <li>Explain why you would be a good fit for this company</li>
+                                                <p>I believe I'm a good candidate because of ...</p>
+                                            </ul>
+                                        </div>
+                                        <div class="questions-container">
+                                            <ul class="questions-list">
+                                                <li>Explain why you would be a good fit for this company</li>
+                                                <p>I believe I'm a good candidate because of ...</p>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="questions-separator"></div>
+                                </div>
+                            </div>
+
+                            <div class="portfolio-review">
+                                <h3>Portfolio Review</h3>
+                                <div class="reviews">
+                                    <div class="review-container">
+                                        <ul class="review-list">
+                                            <li>First Portfolio Project</li>
+                                            <p>I believe I'm a good candidate because of ...</p>
+                                        </ul>
+                                        <div class="reviews-separator"></div>
+                                    </div>
+                                    <div class="review-container">
+                                        <ul class="review-list">
+                                            <li>Second Portfolio Project</li>
+                                            <p>I believe I'm a good candidate because of ...</p>
+                                        </ul>
+                                        <div class="reviews-separator"></div>
+                                    </div>
+                                    <div class="review-container">
+                                        <ul class="review-list">
+                                            <li>Third Portfolio Project</li>
+                                            <p>I believe I'm a good candidate because of ...</p>
+                                        </ul>
+                                        <div class="reviews-separator"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="resume-review">
+                                <h3>Resume Review</h3>
+                                <div class="resume-list">
+                                    <div class="resumes">
+                                        <ul class="resume-attributes">
+                                            <li>Experiences</li>
+                                            <li>Qualifications</li>
+                                            <li>College Qualifications</li>
+                                            <li>Ability Affirmation</li>
+                                            <li>Experiences</li>
+                                            <li>Qualifications</li>
+                                            <li>College Qualification</li>
+                                            <li>Ability Affirmation</li>
+                                        </ul>
+                                        <div class="resumes-separator"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="feedback">
+                            <h3>Company Feedback</h3>
+                            <div class="feedback-content">
+                                <p>"Thank you for sharing your portfolio with me. Overall, I think you have a well-diversified mix of assets and a balanced approach to risk management. However, I noticed that a few of your holdings have underperformed relative to their benchmarks over the past year. It might be worth reviewing these investments to understand why and determine if they still align with your investment objectives. Additionally, I would recommend periodically rebalancing your portoflio to ensure that it continues to align with your risk tolerance and long-term goals."</p>
+                            </div>
+                        </div>
+                        <div class="notes">
+                            <h3>Notes</h3>
+                            <input class="input-notes" type="text" placeholder="Write Reponse Here...">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
